@@ -1,7 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-   
-
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -9,21 +7,28 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+
+  <!-- 🌌 Background Video -->
+  <video autoplay muted loop id="bg-video">
+    <source src="image/13134125_1920_1080_30fps.mp4" type="video/mp4" />
+    Your browser does not support the video tag.
+  </video>
+
+  <!-- 💖 Foreground Content -->
   <div class="container">
     <h1>For the Moments We Cherish...</h1>
     <p>Every memory has a heartbeat, and soon you'll hear ours.</p>
     <button onclick="openMainSite()">Open Memories</button>
   </div>
 
-  <!-- Optional: Background Music -->
+  <!-- 🎵 Optional Music -->
   <audio autoplay loop hidden>
-    <source src="image/Friendship-Anthem-MassTamilan.io-[AudioTrimmer.com].mp3" type="audio/mpeg" />
-    Your browser does not support the audio element.
+    <source src="music.mp3" type="audio/mpeg" />
   </audio>
 
   <script>
     function openMainSite() {
-      // Replace this with your actual website link when it's ready
+      // Replace with your main site URL when it's ready
       window.location.href = "https://your-main-website.com";
     }
   </script>
